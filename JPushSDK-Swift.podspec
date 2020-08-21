@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JPushSDK-Swift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of JPushSDK-Swift.'
+  s.version          = '3.2.4-noidfa'
+  s.summary          = 'JPushSDK Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+JPushSDK，官方SDK封装，便于Swift使用.
                        DESC
 
-  s.homepage         = 'https://github.com/YueKun/JPushSDK-Swift'
+  s.homepage         = 'https://github.com/YueKun555/JPushSDK-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'YueKun' => 'mail.yuekun@gmail.com' }
-  s.source           = { :git => 'https://github.com/YueKun/JPushSDK-Swift.git', :tag => s.version.to_s }
+  s.author           = { 'mail.yuekun@gmail.com' => 'mail.yuekun@gmail.com' }
+  s.source           = { :git => 'https://github.com/YueKun555/JPushSDK-Swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'JPushSDK-Swift/Classes/**/*'
+  s.swift_version = '5.0'
+  s.requires_arc = true
+  s.static_framework = true
+    
+  s.vendored_frameworks = 'Vendor/JPushSDK.framework'
+  s.frameworks  = 'UIKit', 'CFNetwork', 'CoreFoundation', 'CoreTelephony', 'SystemConfiguration', 'CoreGraphics', 'Foundation', 'Security'
+  s.weak_frameworks = 'UserNotifications'
+  s.libraries = 'resolv', 'z'
+  s.dependency 'JCore', '>= 2.0.0'
   
-  # s.resource_bundles = {
-  #   'JPushSDK-Swift' => ['JPushSDK-Swift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

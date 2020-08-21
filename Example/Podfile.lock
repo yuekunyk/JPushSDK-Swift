@@ -1,0 +1,23 @@
+PODS:
+  - JCore (2.3.4)
+  - JPushSDK-Swift (0.1.0):
+    - JCore (>= 2.0.0)
+
+DEPENDENCIES:
+  - JPushSDK-Swift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - JCore
+
+EXTERNAL SOURCES:
+  JPushSDK-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JCore: 8aa29dc57ba3730dd9fe7544ce1a4e1cbe221135
+  JPushSDK-Swift: 4ccd831ea1c0b132655de0da03546d37ddc1fcd9
+
+PODFILE CHECKSUM: f6b90012ec01813ab652f57a8140c300c988b4f9
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,6 @@
+framework module JPushSDK_Swift {
+  umbrella header "JPushSDK-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

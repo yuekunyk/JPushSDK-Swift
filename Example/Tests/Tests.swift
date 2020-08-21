@@ -1,5 +1,4 @@
 import XCTest
-import JPushSDK-Swift
 
 class Tests: XCTestCase {
     

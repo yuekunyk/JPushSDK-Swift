@@ -1,0 +1,4 @@
+framework module JPushSDK {
+  header "JPUSHService.h"
+  export *
+}

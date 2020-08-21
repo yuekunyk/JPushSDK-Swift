@@ -1,0 +1,46 @@
+{
+  "name": "JPushSDK-Swift",
+  "version": "0.1.0",
+  "summary": "A short description of JPushSDK-Swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/YueKun555/JPushSDK-Swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mail.yuekun@gmail.com": "mail.yuekun@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/YueKun555/JPushSDK-Swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "static_framework": true,
+  "vendored_frameworks": "Vendor/JPushSDK.framework",
+  "frameworks": [
+    "UIKit",
+    "CFNetwork",
+    "CoreFoundation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "Foundation",
+    "Security"
+  ],
+  "weak_frameworks": "UserNotifications",
+  "libraries": [
+    "resolv",
+    "z"
+  ],
+  "dependencies": {
+    "JCore": [
+      ">= 2.0.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
